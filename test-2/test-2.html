@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Devarakonda</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Section */
+        header {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Main Section */
+        main {
+            padding: 1rem;
+        }
+
+        /* Biography Section */
+        .bio {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Image Styling */
+        .bio img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* Biography Description */
+        .bio .description {
+            flex: 1;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            margin: 2rem 0;
+        }
+
+        /* Grid Layout for Achievements */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .grid-item {
+            background: #ff8c00;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .bio {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bio img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Vijay Devarakonda</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Biography Section -->
+        <section class="bio">
+            <!-- Image -->
+            <img src="https://4.bp.blogspot.com/-jv6TQiTw7TM/W4UAVb8HJFI/AAAAAAAADKI/d4sF_o-Sx6Q8HHg2a_mxWqVPNPvStYpMgCLcBGAs/s1600/v03.jpg" alt="Vijay Devarakonda">
+            <div class="description">
+                <h2>About Vijay Devarakonda</h2>
+                <p>
+                    Vijay Devarakonda was born on 9th May 1989. He is a popular Indian actor and film producer who works predominantly in Telugu films.
+                    One of the highest-paid actors of Telugu cinema, he has featured in Forbes India's Celebrity 100 list since 2018 and has received
+                    several accolades, including a Filmfare Award, a Nandi Award, and three SIIMA Awards.
+                </p>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <div class="grid-container">
+                <!-- Grid Items -->
+                <div class="grid-item">Breakthrough Movie: Arjun Reddy</div>
+                <div class="grid-item">Awarded as SIIMA Best Actor</div>
+                <div class="grid-item">Founder of "Rowdy" Brand</div>
+                <div class="grid-item">Launched Production House: King of the Hill</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Created by Amrutha</p>
+    </footer>
+</body>
+</html>
