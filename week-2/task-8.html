@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the head section where meta information and the internal CSS are defined -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class Selector Example</title>
+    
+    <!-- Internal CSS to style the button with class .btn -->
+    <style>
+        /* This is the internal CSS section */
+        
+        /* Class selector to target the button with class .btn */
+        .btn {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text color */
+            padding: 15px 32px; /* Top and bottom padding of 15px, left and right padding of 32px */
+            text-align: center; /* Centers the text inside the button */
+            text-decoration: none; /* Removes underline from the link */
+            display: inline-block; /* Allows for setting padding and other box-model properties */
+            font-size: 16px; /* Sets font size */
+            border-radius: 12px; /* Makes the corners rounded */
+            border: none; /* Removes the default border */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+        }
+
+        /* Hover effect: changes background color when the user hovers over the button */
+        .btn:hover {
+            background-color: #45a049; /* Darker green when hovered */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This is the content section -->
+    <h1>Click the Button</h1>
+    
+    <!-- Button with class .btn applied -->
+    <button class="btn">Click Me!</button>
+
+</body>
+</html>

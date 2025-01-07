@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with Box Shadow</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px; /* Rounds the corners of the card */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Slightly lifts the card on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-content {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-title">Card Title</div>
+        <div class="card-content">
+            This is an example of a card element with a soft shadow effect. Hover over the card to see the effect.
+        </div>
+    </div>
+</body>
+</html>

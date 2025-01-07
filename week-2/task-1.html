@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Table</title>
+    <style>
+        /* General table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Table borders */
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        /* Header row styling */
+        thead th {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Body cells styling */
+        tbody td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Zebra striping for rows */
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect for rows */
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>bhanu sree</td>
+                <td>Mathematics</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>shreya</td>
+                <td>Science</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Harshitha</td>
+                <td>History</td>
+                <td>A-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
