@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-index Property Tasks</title>
+  <style>
+    /* Task 12: Overlapping Elements with Different Z-index */
+    .box1, .box2, .box3 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    .box1 {
+      background-color: lightblue;
+      z-index: 1;
+    }
+    .box2 {
+      background-color: lightcoral;
+      z-index: 2;
+    }
+    .box3 {
+      background-color: lightgreen;
+      z-index: 3;
+    }
+
+    /* Task 13: Modal Dialog Box */
+    .modal {
+      display: none; /* Initially hidden */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      z-index: 1000;
+    }
+
+    .modal button {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Task 14: Drop-down Menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 12: Overlapping Elements -->
+  <h3>Task 12: Overlapping Elements with Different Z-index</h3>
+  <div class="box1">Box 1 (z-index: 1)</div>
+  <div class="box2">Box 2 (z-index: 2)</div>
+  <div class="box3">Box 3 (z-index: 3)</div>
+
+  <!-- Task 13: Modal Dialog Box -->
+  <h3>Task 13: Modal Dialog Box</h3>
+  <button onclick="showModal()">Open Modal</button>
+  <div class="modal" id="modal">
+    <h2>Modal Title</h2>
+    <p>This is a modal dialog box.</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+
+  <script>
+    function showModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+
+  <!-- Task 14: Drop-down Menu -->
+  <h3>Task 14: Drop-down Menu</h3>
+  <div class="dropdown">
+    <button>Dropdown</button>
+    <div class="dropdown-content">
+      <a href="https://thumbs.dreamstime.com/b/purple-rain-lily-flower-beautiful-white-background-93074594.jpg">Option 1</a>
+      <a href="https://wallpapercave.com/wp/wp3755331.jpg">Option 2</a>
+      <a href="https://images6.alphacoders.com/740/740154.jpg">Option 3</a>
+    </div>
+  </div>
+
+</body>
+</html>

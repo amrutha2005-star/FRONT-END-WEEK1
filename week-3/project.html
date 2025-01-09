@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Sidebar with Scrolling Content</title>
+  <style>
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: lightcoral;
+      padding: 20px;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    /* Main Content */
+    .content {
+      margin-left: 220px; /* Ensure content doesn't overlap with the fixed sidebar */
+      padding: 20px;
+      background-color: lightgreen;
+      height: 100vh;
+      overflow-y: auto; /* Allows scrolling */
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    /* Scrollable Content */
+    .scrollable-content {
+      max-height: 300px; /* Set the height limit for the scrollable area */
+      overflow-y: auto; /* Add a vertical scrollbar */
+      padding: 10px;
+      background-color: lightyellow;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar (Fixed Position) -->
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <ul>
+      <li><a href="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=daylight-forest-glossy-443446.jpg&fm=jpg">Link 1</a></li>
+      <li><a href="https://th.bing.com/th/id/OIP.RqVgAtjJvL4dohKLV1REXAHaEK?rs=1&pid=ImgDetMain">Link 2</a></li>
+      <li><a href="https://wallpapercave.com/wp/wp3755331.jpg">Link 3</a></li>
+      <li><a href="https://images6.alphacoders.com/740/740154.jpg">Link 4</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content (Scrollable Section) -->
+  <div class="content">
+    <h2>Main Content Area</h2>
+    <p>This is the main content area. It is designed to sit next to the fixed sidebar.</p>
+    
+    <!-- Scrollable Content Section -->
+    <div class="scrollable-content">
+      <h3>Scrollable Content</h3>
+      <p>This section has a height limit and a vertical scrollbar will appear when content overflows.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet magna nec nulla faucibus tincidunt.</p>
+      <p>Nulla facilisi. Suspendisse potenti. Cras sit amet ex at dui euismod tincidunt ut vel nisi. Vivamus euismod dui non ipsum fringilla, et euismod lectus congue.</p>
+      <p>Donec vitae ante magna. Donec venenatis hendrerit eros, in volutpat velit consectetur et. Integer lacinia nulla at mauris posuere gravida.</p>
+      <p>Curabitur vehicula, erat id rhoncus hendrerit, arcu justo ullamcorper odio, sed facilisis enim mi non eros.</p>
+      <p>Fusce vel lorem justo. Sed a risus in dui fermentum tincidunt non sed libero. Nunc venenatis augue at lorem cursus ultricies.</p>
+      <p>Maecenas sit amet ipsum ut purus suscipit tincidunt. Sed fringilla turpis vel augue tristique, sit amet pretium felis rutrum.</p>
+    </div>
+  </div>
+
+</body>
+</html>

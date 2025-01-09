@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Property Tasks</title>
+  <style>
+    /* Task 4: Static Positioning */
+    .static-div {
+      position: static;
+      background-color: lightblue;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    /* Task 5: Relative Positioning */
+    .relative-div {
+      position: relative;
+      background-color: lightcoral;
+      padding: 20px;
+      margin: 10px;
+      top: 30px;
+      left: 50px;
+    }
+
+    /* Task 6: Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: lightgreen;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+      z-index: 100;
+    }
+
+    /* Task 7: Fixed Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: lightyellow;
+      padding: 20px;
+    }
+
+    /* Task 8: Center Image */
+    .centered-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Additional Styling */
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 60px; /* Added space for sticky header */
+    }
+    .content {
+      margin-left: 220px; /* Space for sidebar */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 4: Static Positioning -->
+  <h3>Task 4: Static Position</h3>
+  <div class="static-div">
+    This is a static-positioned div. It behaves according to the normal document flow.
+  </div>
+
+  <!-- Task 5: Relative Positioning -->
+  <h3>Task 5: Relative Position</h3>
+  <div class="relative-div">
+    This is a relatively positioned div. It is moved 50px to the right and 30px down from its normal position.
+  </div>
+
+  <!-- Task 6: Sticky Header -->
+  <header>
+    This is a sticky header. It sticks to the top as you scroll.
+  </header>
+
+  <!-- Task 7: Fixed Sidebar -->
+  <div class="sidebar">
+    This is a fixed sidebar. It stays in place when scrolling.
+  </div>
+
+  <!-- Task 8: Centered Image -->
+  <h3>Task 8: Centered Image</h3>
+  <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" alt="Centered Image" class="centered-image">
+
+  <!-- Content to make scrolling visible -->
+  <div class="content">
+    <p>Scroll down to observe sticky header and fixed sidebar behavior.</p>
+    <p>Scroll further to see the image centered on the screen.</p>
+    <p>Keep scrolling...</p>
+    <p>This content is to demonstrate the effect of a sticky header and fixed sidebar.</p>
+    <p>End of content.</p>
+  </div>
+
+</body>
+</html>

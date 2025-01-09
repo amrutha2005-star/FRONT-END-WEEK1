@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Property Tasks</title>
+  <style>
+    /* Task 20: Basic Grid Layout */
+    .task20-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      background-color: lightgray;
+      padding: 20px;
+    }
+    .task20-item {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Task 21: Three-Column Layout */
+    .task21-container {
+      display: grid;
+      grid-template-columns: 200px auto 100px;
+      gap: 20px;
+      background-color: lightblue;
+      padding: 20px;
+    }
+    .task21-item {
+      background-color: lightgreen;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Task 22: Grid Layout with Rows and Columns */
+    .task22-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 100px auto;
+      gap: 20px;
+      background-color: lightyellow;
+      padding: 20px;
+    }
+    .task22-item {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Task 23: Responsive Image Gallery */
+    .task23-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      background-color: lightgray;
+      padding: 20px;
+    }
+    .task23-item {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Task 24: Grid Items Spanning Multiple Rows or Columns */
+    .task24-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      background-color: lightgreen;
+      padding: 20px;
+    }
+    .task24-item {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+    .task24-item span {
+      display: block;
+      padding: 10px;
+      background-color: lightblue;
+    }
+    .task24-item:nth-child(2) {
+      grid-column: span 2;
+    }
+    .task24-item:nth-child(3) {
+      grid-row: span 2;
+    }
+
+    /* Task 25: Centering Grid Items */
+    .task25-container {
+      display: grid;
+      place-items: center;
+      background-color: lightyellow;
+      height: 200px;
+    }
+    .task25-item {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Task 26: Layout with Header, Sidebar, Main, and Footer */
+    .task26-container {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+      padding: 20px;
+      background-color: lightgray;
+    }
+    .task26-header {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+      grid-area: header;
+    }
+    .task26-sidebar {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+      grid-area: sidebar;
+    }
+    .task26-main {
+      background-color: lightgreen;
+      padding: 20px;
+      text-align: center;
+      grid-area: main;
+    }
+    .task26-footer {
+      background-color: lightyellow;
+      padding: 20px;
+      text-align: center;
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 20: Basic Grid Layout -->
+  <h3>Task 20: Basic Grid Layout</h3>
+  <div class="task20-container">
+    <div class="task20-item">Item 1</div>
+    <div class="task20-item">Item 2</div>
+  </div>
+
+  <!-- Task 21: Three-Column Layout -->
+  <h3>Task 21: Three-Column Layout</h3>
+  <div class="task21-container">
+    <div class="task21-item">Column 1</div>
+    <div class="task21-item">Column 2 (auto width)</div>
+    <div class="task21-item">Column 3 (100px width)</div>
+  </div>
+
+  <!-- Task 22: Grid Layout with Rows and Columns -->
+  <h3>Task 22: Grid Layout with Rows and Columns</h3>
+  <div class="task22-container">
+    <div class="task22-item">Item 1</div>
+    <div class="task22-item">Item 2</div>
+    <div class="task22-item">Item 3</div>
+  </div>
+
+  <!-- Task 23: Responsive Image Gallery -->
+  <h3>Task 23: Responsive Image Gallery</h3>
+  <div class="task23-container">
+    <div class="task23-item">Image 1</div>
+    <div class="task23-item">Image 2</div>
+    <div class="task23-item">Image 3</div>
+    <div class="task23-item">Image 4</div>
+  </div>
+
+  <!-- Task 24: Grid Items Spanning Multiple Rows or Columns -->
+  <h3>Task 24: Grid Items Spanning Multiple Rows or Columns</h3>
+  <div class="task24-container">
+    <div class="task24-item">Item 1</div>
+    <div class="task24-item">Item 2 (Spans 2 Columns)</div>
+    <div class="task24-item">Item 3 (Spans 2 Rows)</div>
+    <div class="task24-item">Item 4</div>
+  </div>
+
+  <!-- Task 25: Centering Grid Items -->
+  <h3>Task 25: Centering Grid Items</h3>
+  <div class="task25-container">
+    <div class="task25-item">Centered Item</div>
+  </div>
+
+  <!-- Task 26: Layout with Header, Sidebar, Main, and Footer -->
+  <h3>Task 26: Layout with Header, Sidebar, Main, and Footer</h3>
+  <div class="task26-container">
+    <div class="task26-header">Header</div>
+    <div class="task26-sidebar">Sidebar</div>
+    <div class="task26-main">Main Content</div>
+    <div class="task26-footer">Footer</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Property Tasks</title>
+  <style>
+    /* Task 1 */
+    .task1-div {
+      display: block;
+      background-color: lightblue;
+      margin: 10px;
+    }
+    .task1-span {
+      display: inline;
+      background-color: lightcoral;
+      padding: 5px;
+    }
+    .task1-p {
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    /* Task 2 */
+    .hidden {
+      display: none;
+      background-color: lightpink;
+      padding: 20px;
+      margin: 10px;
+    }
+    .visible {
+      display: block;
+      background-color: lightyellow;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    /* Task 3 */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1 -->
+  <h3>Task 1: Display Block, Inline and Paragraph</h3>
+  <div class="task1-div">This is a block-level div element.</div>
+  <span class="task1-span">This is an inline span element.</span>
+  <p class="task1-p">This is a paragraph tag.</p>
+
+  <!-- Task 2 -->
+  <h3>Task 2: Toggle Display None</h3>
+  <div class="hidden" id="div1">This div is initially hidden.</div>
+  <button onclick="toggleDiv()">Toggle Div</button>
+
+  <script>
+    function toggleDiv() {
+      var div = document.getElementById('div1');
+      if (div.style.display === 'none') {
+        div.style.display = 'block';
+      } else {
+        div.style.display = 'none';
+      }
+    }
+  </script>
+
+  <!-- Task 3 -->
+  <h3>Task 3: Navigation Bar</h3>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+  </ul>
+
+</body>
+</html>

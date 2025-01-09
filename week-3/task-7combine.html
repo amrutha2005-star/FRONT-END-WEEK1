@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Layout Tasks</title>
+  <style>
+    /* Task 27: Website Layout using Flexbox for Header/Footer and Grid for Main Content and Sidebar */
+    .task27-container {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    }
+    .task27-header, .task27-footer {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+    .task27-sidebar {
+      background-color: lightblue;
+      padding: 20px;
+    }
+    .task27-main {
+      background-color: lightgreen;
+      padding: 20px;
+    }
+
+    /* Task 28: Responsive Webpage with Flexbox for Small Screens, Grid for Larger Screens */
+    @media (max-width: 768px) {
+      .task28-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .task28-sidebar, .task28-main {
+        width: 100%;
+      }
+    }
+    @media (min-width: 769px) {
+      .task28-container {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+      }
+      .task28-sidebar {
+        background-color: lightblue;
+      }
+      .task28-main {
+        background-color: lightgreen;
+      }
+    }
+
+    /* Task 29: Fixed Navigation Bar using Flexbox, Fixed at the Top with z-index */
+    .task29-nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: lightcoral;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .task29-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .task29-content {
+      margin-top: 60px; /* To avoid overlap with fixed navbar */
+      padding: 20px;
+    }
+
+    /* Task 30: Dynamic Grid Layout for Blog Feed (Fallback with Float for Older Browsers) */
+    .task30-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .task30-item {
+      background-color: lightyellow;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Fallback for older browsers using float */
+    @supports not (display: grid) {
+      .task30-container {
+        display: block;
+      }
+      .task30-item {
+        float: left;
+        width: 30%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Task 27: Website Layout using Flexbox for Header/Footer and Grid for Main Content and Sidebar -->
+  <h3>Task 27: Website Layout (Flexbox + Grid)</h3>
+  <div class="task27-container">
+    <div class="task27-header">Header</div>
+    <div class="task27-sidebar">Sidebar</div>
+    <div class="task27-main">Main Content</div>
+    <div class="task27-footer">Footer</div>
+  </div>
+
+  <!-- Task 28: Responsive Webpage Layout -->
+  <h3>Task 28: Responsive Webpage</h3>
+  <div class="task28-container">
+    <div class="task28-sidebar">Sidebar</div>
+    <div class="task28-main">Main Content</div>
+  </div>
+
+  <!-- Task 29: Fixed Navigation Bar -->
+  <h3>Task 29: Fixed Navigation Bar</h3>
+  <div class="task29-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="task29-content">
+    <h4>Main Content Below Fixed Navbar</h4>
+    <p>This content is pushed down to avoid overlap with the fixed navigation bar.</p>
+  </div>
+
+  <!-- Task 30: Dynamic Grid Layout for Blog Feed -->
+  <h3>Task 30: Blog Feed Layout</h3>
+  <div class="task30-container">
+    <div class="task30-item">Blog Post 1</div>
+    <div class="task30-item">Blog Post 2</div>
+    <div class="task30-item">Blog Post 3</div>
+    <div class="task30-item">Blog Post 4</div>
+    <div class="task30-item">Blog Post 5</div>
+    <div class="task30-item">Blog Post 6</div>
+  </div>
+
+</body>
+</html>

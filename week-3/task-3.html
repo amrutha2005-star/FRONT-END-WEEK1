@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Property Tasks</title>
+  <style>
+    /* Task 9: Two-Column Layout using Float */
+    .container {
+      width: 100%;
+      overflow: hidden; /* Clears the floats */
+    }
+    .left-column {
+      width: 45%;
+      float: left;
+      background-color: lightblue;
+      margin: 10px;
+      padding: 20px;
+    }
+    .right-column {
+      width: 45%;
+      float: right;
+      background-color: lightcoral;
+      margin: 10px;
+      padding: 20px;
+    }
+
+    /* Task 10: Floating Image with Text Wrap */
+    .float-image {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    .text-block {
+      background-color: lightyellow;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    /* Task 11: Clearing Floats */
+    .clearfix {
+      clear: both;
+      display: block;
+    }
+    .float-box {
+      width: 30%;
+      float: left;
+      background-color: lightgreen;
+      margin: 10px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 9: Two-Column Layout -->
+  <h3>Task 9: Two-Column Layout</h3>
+  <div class="container">
+    <div class="left-column">
+      This is the left column. It floats to the left of the container.
+    </div>
+    <div class="right-column">
+      This is the right column. It floats to the right of the container.
+    </div>
+  </div>
+
+  <!-- Task 10: Floating Image with Text Wrap -->
+  <h3>Task 10: Floating Image with Text Wrap</h3>
+  <div class="text-block">
+    <img src="https://cdn.wallpapersafari.com/9/59/AUb4IL.jpg" alt="Floating Image" class="float-image">
+    This is a block of text that will wrap around the floating image. The image is floated to the left, allowing the text to flow around it. By using `float: left`, we ensure the image stays on the left side, while the text continues to the right of it.
+    The text will move around the image, and if the image is large enough, it will push the text below it.
+  </div>
+
+  <!-- Task 11: Clearing Floats -->
+  <h3>Task 11: Clearing Floats</h3>
+  <div class="float-box">This is a floated div.</div>
+  <div class="float-box">This is another floated div.</div>
+  <div class="clearfix"></div> <!-- Clears the float -->
+  <div>This div is cleared from the float above and does not overlap.</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Property Tasks</title>
+  <style>
+    /* Task 15: Align Items Horizontally with Space Between */
+    .task15-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: lightblue;
+      padding: 20px;
+    }
+    .task15-item {
+      background-color: lightcoral;
+      padding: 20px;
+      width: 100px;
+      text-align: center;
+    }
+
+    /* Task 16: Vertical Navigation Bar */
+    .task16-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: lightgreen;
+      padding: 20px;
+      width: 200px;
+    }
+    .task16-nav a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Task 17: Responsive Card Layout */
+    .task17-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .task17-card {
+      background-color: lightyellow;
+      width: 200px;
+      margin: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Task 18: Align Items Vertically */
+    .task18-container {
+      display: flex;
+      height: 300px;
+      justify-content: space-evenly;
+    }
+    .task18-item {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .task18-start {
+      align-items: flex-start;
+    }
+    .task18-center {
+      align-items: center;
+    }
+    .task18-end {
+      align-items: flex-end;
+    }
+
+    /* Task 19: Pricing Table with Flex-grow and Flex-shrink */
+    .task19-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .task19-card {
+      background-color: lightblue;
+      width: 30%;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .task19-card:nth-child(1) {
+      flex-grow: 1; /* This card grows proportionally */
+    }
+    .task19-card:nth-child(2) {
+      flex-grow: 2; /* This card grows more */
+    }
+    .task19-card:nth-child(3) {
+      flex-shrink: 1; /* This card shrinks proportionally */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 15: Align Items Horizontally with Space Between -->
+  <h3>Task 15: Align Items Horizontally</h3>
+  <div class="task15-container">
+    <div class="task15-item">Item 1</div>
+    <div class="task15-item">Item 2</div>
+    <div class="task15-item">Item 3</div>
+  </div>
+
+  <!-- Task 16: Vertical Navigation Bar -->
+  <h3>Task 16: Vertical Navigation Bar</h3>
+  <div class="task16-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Task 17: Responsive Card Layout -->
+  <h3>Task 17: Responsive Card Layout</h3>
+  <div class="task17-container">
+    <div class="task17-card">Card 1</div>
+    <div class="task17-card">Card 2</div>
+    <div class="task17-card">Card 3</div>
+    <div class="task17-card">Card 4</div>
+  </div>
+
+  <!-- Task 18: Align Items Vertically -->
+  <h3>Task 18: Align Items Vertically</h3>
+  <div class="task18-container">
+    <div class="task18-item task18-start">Start</div>
+    <div class="task18-item task18-center">Center</div>
+    <div class="task18-item task18-end">End</div>
+  </div>
+
+  <!-- Task 19: Pricing Table with Flex-grow and Flex-shrink -->
+  <h3>Task 19: Pricing Table</h3>
+  <div class="task19-container">
+    <div class="task19-card">Basic Plan</div>
+    <div class="task19-card">Standard Plan</div>
+    <div class="task19-card">Premium Plan</div>
+  </div>
+
+</body>
+</html>
