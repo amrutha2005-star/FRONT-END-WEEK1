@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch and Display Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .user-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .user-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .user-card h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .user-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fetch and Display Data</h1>
+  <button id="fetch-data-btn">Fetch User Profiles</button>
+  <div class="user-container" id="user-container">
+    <!-- User profiles will be displayed here -->
+  </div>
+
+  <!-- Linking the external JavaScript file -->
+  <script src="task-15.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Interface</title>
+    <style>
+        /* Style for tabs */
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .tab {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            background-color: #f1f1f1;
+        }
+        .tab:hover {
+            background-color: #ddd;
+        }
+        .tab.active {
+            background-color: #ccc;
+        }
+
+        /* Style for tab content */
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabbed Interface Example</h2>
+    
+    <div class="tabs">
+        <div class="tab active" id="tab1">Tab 1</div>
+        <div class="tab" id="tab2">Tab 2</div>
+        <div class="tab" id="tab3">Tab 3</div>
+    </div>
+
+    <div id="content1" class="tab-content active">
+        <h3>Content for Tab 1</h3>
+        <p>This is the content displayed when Tab 1 is selected.</p>
+    </div>
+    <div id="content2" class="tab-content">
+        <h3>Content for Tab 2</h3>
+        <p>This is the content displayed when Tab 2 is selected.</p>
+    </div>
+    <div id="content3" class="tab-content">
+        <h3>Content for Tab 3</h3>
+        <p>This is the content displayed when Tab 3 is selected.</p>
+    </div>
+
+    <script src="task-13.js"></script>
+</body>
+</html>

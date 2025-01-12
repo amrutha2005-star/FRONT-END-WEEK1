@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic DOM Manipulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .list-container {
+      margin-top: 20px;
+    }
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .remove-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .remove-btn:hover {
+      background-color: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Element Creation and Removal</h1>
+  <button id="add-item-btn">Add Item</button>
+  
+  <div class="list-container" id="list-container">
+    <!-- List items will be added here -->
+  </div>
+
+  <!-- Linking the external JavaScript file -->
+  <script src="task-14.js"></script>
+</body>
+</html>
