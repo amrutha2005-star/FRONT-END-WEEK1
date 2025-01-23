@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, p {
+  margin: 10px 0;
+}
+
+/* task-4: User Profile Card Styles */
+.user-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.user-image {
+  width: 900px;
+  height: 350px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.user-details {
+  padding: 20px;
+}
+
+.user-name-input {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* task-5: Inline Styling */
+h1[style] {
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+}
+
+/* task-20: External CSS Styling for Header */
+.styled-header {
+  color: #333;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* task-26: Render Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+}
